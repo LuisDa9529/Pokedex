@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InfoLayout">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="160sp"
+            android:layout_height="180sp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/imagePoke"
+            android:padding="16px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NAME"
+                android:textSize="25sp"
+                android:layout_margin="5sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@android:color/black"
+                android:textAllCaps="true"
+                android:id="@+id/nameText"/>
+            <TextView
+                android:id="@+id/generaText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4sp"
+                android:text="genera"
+                />
+            <TextView
+                android:id="@+id/typeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4sp"
+                android:text="Types: "/>
+            <TextView
+                android:id="@+id/heightText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4sp"
+                android:text="HEIGHT"/>
+            <TextView
+                android:id="@+id/weightText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4sp"
+                android:text="WEIGHT"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:text="DESCRIPTION" />
+
+
+
+</LinearLayout>
