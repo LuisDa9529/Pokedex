@@ -3,6 +3,7 @@ package com.example.pokedex2;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -142,6 +143,8 @@ public class InfoLayout extends AppCompatActivity {
                         }
                         generaView.setText(pokeGenera);
                         descView.setText(pokeDesc);
+                        findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+
                     }
                 }, new Response.ErrorListener(){
             @Override
@@ -152,7 +155,6 @@ public class InfoLayout extends AppCompatActivity {
 
         mQueue.add(request);
         mQueue2.add(request2);
-
 
 
     }

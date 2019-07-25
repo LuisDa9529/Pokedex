@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.RelativeLayout;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -69,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
 
                         MyAdapter myAdapter = new MyAdapter(context, pokeName);
                         view.setAdapter(myAdapter);
+                        findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+
 
 //                        Log.d("TAG", String.valueOf(adapter.isEmpty())+numbers.size());
                     }

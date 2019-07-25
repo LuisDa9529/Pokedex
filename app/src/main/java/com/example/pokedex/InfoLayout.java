@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -142,6 +143,8 @@ public class InfoLayout extends AppCompatActivity {
                         }
                         generaView.setText(pokeGenera);
                         descView.setText(pokeDesc);
+                        findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+
                     }
                 }, new Response.ErrorListener(){
             @Override

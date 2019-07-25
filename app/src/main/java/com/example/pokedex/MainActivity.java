@@ -94,7 +94,8 @@ public class MainActivity extends AppCompatActivity {
 
                         MyAdapter adapter = new MyAdapter(context, numbers, names);
                         listView.setAdapter(adapter);
-//                        Log.d("TAG", String.valueOf(adapter.isEmpty())+numbers.size());
+                        findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+
                     }
                 }, new Response.ErrorListener(){
             @Override
