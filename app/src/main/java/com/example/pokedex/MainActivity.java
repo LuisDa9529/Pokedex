@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = (String) parent.getItemAtPosition(position);
 
-                Toast.makeText(MainActivity.this, String.valueOf(item), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity.this, String.valueOf(item), Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(getBaseContext(), InfoLayout.class);
                 intent.putExtra("POKEMON", item);
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void jsonParser(){
 
-        String url = "https://pokeapi.co/api/v2/pokemon/?limit=20";
+        String url = "https://pokeapi.co/api/v2/pokemon/?limit=151";
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>(){
